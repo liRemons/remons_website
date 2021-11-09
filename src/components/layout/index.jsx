@@ -3,7 +3,6 @@ const publicComponent = () => {
 
 }
 function Layout(props) {
-  console.log(props);
-  return <>Layout{props.children}</>
+  return <>{props.children}</>
 }
 export default withRouter(Layout)

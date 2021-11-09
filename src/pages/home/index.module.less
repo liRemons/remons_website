@@ -1,0 +1,47 @@
+.main {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 10px;
+  width: 100%;
+  font-size: 60px;
+  height: 100%;
+  align-items: center;
+  z-index: 1;
+  color: #fff;
+
+  text-shadow: 1px 0px 0px #000;
+  justify-content: space-around;
+  display: flex;
+  .box {
+    width: 250px;
+    height: 250px;
+    background: #eaebf3;
+    border-radius: 10px;
+    line-height: 230px;
+    box-shadow: -5px 0px 10px 1px rgba(255, 255, 255, 0.8),
+      /*左*/ 0px -5px 10px 1px rgba(255, 255, 255, 0.8),
+      /*上*/ 5px 0px 10px 1px rgba(0, 0, 0, 0.1),
+      /*右*/ 0px 5px 10px 1px rgba(0, 0, 0, 0.1); /*下*/
+    cursor: pointer;
+    transition: all 0.5s;
+    img {
+      width: 200px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .enter {
+    position: fixed;
+    text-align: center;
+    bottom: 150px;
+    width: 100%;
+  }
+}
+
+:global {
+  .ant-btn-round.ant-btn-lg {
+    font-size: 14px !important;
+  }
+}
